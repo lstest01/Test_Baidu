@@ -22,7 +22,7 @@ class Test_02:
         print(f"----------------{t}---------------")
 
     @allure.step(title="标题：无关紧要的测试")
-    @pytest.allure.severity(pytest.allure.severity_level.TRIVIAL)
+    # @pytest.allure.severity(pytest.allure.severity_level.TRIVIAL)
     def test03(self):
         allure.attach("描述主题：打印", "描述内容：随便打印一些内容吧")
         print("----------------test03---------------")

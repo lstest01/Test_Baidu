@@ -16,7 +16,7 @@ class Test_01:
     #     print("*"*50)
     #     print(testData())
     @allure.step(title="标题:测试百度搜索")
-    @pytest.allure.severity(pytest.allure.severity_level.BLACKER)
+    # @pytest.allure.severity(pytest.allure.severity_level.BLACKER)
     @pytest.mark.parametrize("td",[1,2,3,4,5])
     def test_01(self,td):
         allure.attach("测试输入和搜索", "搜索列表[1,2,3,4,5]")
